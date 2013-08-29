@@ -299,13 +299,18 @@ a:hover { cursor: $cursor-pointer-value; }
   // Override outline from normalize, we don't like it
   a:focus { outline: none; }
 
-  // Grid Defaults to get images and embeds to work properly
-  img,
-  object,
-  embed { max-width: 100%; height: auto; }
+  // leave default styles in tact for images
+  img { max-width: 100%; height: auto; }
 
-  object,
-  embed { height: 100%; }
+  // comment out crap that makes flash ads scale crazy
+  // Grid Defaults to get images and embeds to work properly
+  //img,
+  //object,
+  //embed { max-width: 100%; height: auto; }
+
+  //object,
+  //embed { height: 100%; }
+
   img { -ms-interpolation-mode: bicubic; }
 
   #map_canvas,
